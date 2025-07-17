@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swiss Army Knife", "Swiss Army Knife\Swiss Army Knife.csproj", "{3432F03D-FB24-4795-98D1-A8D8D7581895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swiss Army Knife.Android", "Swiss Army Knife.Android\Swiss Army Knife.Android.csproj", "{4FD9363E-D09D-4A44-B143-20B798A605D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swiss Army Knife.Desktop", "Swiss Army Knife.Desktop\Swiss Army Knife.Desktop.csproj", "{754653C4-E308-4FA9-9FA1-0AE1EF7F24C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3432F03D-FB24-4795-98D1-A8D8D7581895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3432F03D-FB24-4795-98D1-A8D8D7581895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3432F03D-FB24-4795-98D1-A8D8D7581895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3432F03D-FB24-4795-98D1-A8D8D7581895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD9363E-D09D-4A44-B143-20B798A605D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD9363E-D09D-4A44-B143-20B798A605D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD9363E-D09D-4A44-B143-20B798A605D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4FD9363E-D09D-4A44-B143-20B798A605D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD9363E-D09D-4A44-B143-20B798A605D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD9363E-D09D-4A44-B143-20B798A605D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{754653C4-E308-4FA9-9FA1-0AE1EF7F24C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754653C4-E308-4FA9-9FA1-0AE1EF7F24C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754653C4-E308-4FA9-9FA1-0AE1EF7F24C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754653C4-E308-4FA9-9FA1-0AE1EF7F24C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
