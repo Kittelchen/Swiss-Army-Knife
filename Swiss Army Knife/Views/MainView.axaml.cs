@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace Swiss_Army_Knife.Views;
+namespace SAK.Views;
 
 public partial class MainView : UserControl
 {

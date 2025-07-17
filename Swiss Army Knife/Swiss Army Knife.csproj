@@ -17,5 +17,16 @@
 
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.3.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ButtonPageView.axaml.cs">
+      <DependentUpon>ButtonPageView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\HomePageView.axaml.cs">
+      <DependentUpon>HomePageView.axaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

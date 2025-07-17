@@ -2,9 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:Swiss_Army_Knife.ViewModels"
+             xmlns:vm="clr-namespace:SAK.ViewModels"
+			 xmlns:res="clr-namespace:SAK.Services"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Swiss_Army_Knife.Views.MainView"
+             x:Class="SAK.Views.MainView"
              x:DataType="vm:MainViewModel">
   <Design.DataContext>
     <!-- This only sets the DataContext for the previewer in an IDE,
@@ -12,5 +13,36 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<SplitView IsPaneOpen="{Binding IsPaneOpen}"
+			   OpenPaneLength="200"
+			   CompactPaneLength="40"
+			   DisplayMode="CompactInline"
+			   Background="#1e1e1e"
+			   PaneBackground="#1e1e1e">
+		<SplitView.Pane>
+			<StackPanel Spacing="5" Margin="5">
+			<Button Command="{Binding TogglePaneCommand}">
+				-
+			</Button>
+			<ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}"> 
+				<ListBox.ItemTemplate>
+					<DataTemplate DataType="{x:Type vm:ListItemTemplate}">
+						<StackPanel Spacing="15" Orientation="Horizontal">
+							<TextBlock Text="{Binding Label}" />
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			</StackPanel>
+		</SplitView.Pane>
+		<SplitView.Content>
+			<Border CornerRadius="12 0 0 0"
+					Background="#2d2d2d">
+				<TransitioningContentControl Content="{Binding CurrentPage}">
+					
+				</TransitioningContentControl>
+			</Border>
+			
+		</SplitView.Content>
+	</SplitView>
 </UserControl>

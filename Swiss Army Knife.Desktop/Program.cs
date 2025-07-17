@@ -2,7 +2,7 @@
 
 using Avalonia;
 
-namespace Swiss_Army_Knife.Desktop;
+namespace SAK.Desktop;
 
 class Program
 {

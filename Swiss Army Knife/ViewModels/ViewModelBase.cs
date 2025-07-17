@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Swiss_Army_Knife.ViewModels;
+namespace SAK.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {

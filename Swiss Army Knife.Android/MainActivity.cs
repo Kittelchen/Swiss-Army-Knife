@@ -4,10 +4,10 @@ using Android.Content.PM;
 using Avalonia;
 using Avalonia.Android;
 
-namespace Swiss_Army_Knife.Android;
+namespace SAK.Android;
 
 [Activity(
-    Label = "Swiss_Army_Knife.Android",
+    Label = "SAK.Android",
     Theme = "@style/MyTheme.NoActionBar",
     Icon = "@drawable/icon",
     MainLauncher = true,
