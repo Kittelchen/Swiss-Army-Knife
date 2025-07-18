@@ -22,6 +22,7 @@ public partial class MainViewModel : ViewModelBase
 
     partial void OnSelectedItemChanged(ListItemTemplate? value)
     {
+        ITestService testService = new TestService();
         if (value is null) return;
         CurrentPage = _navigationService.NavigateTo(value.Label + "Page");
 

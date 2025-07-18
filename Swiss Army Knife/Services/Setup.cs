@@ -44,14 +44,16 @@ namespace SAK.Services
             services
                 .AddTransient<ViewModelBase>()
                 .AddTransient<MainViewModel>()
-                .AddTransient<HomePageViewModel>();
+                .AddTransient<HomePageViewModel>()
+                .AddTransient<ButtonPageViewModel>();
         }
 
         private static void RegisterViews(IServiceCollection services)
         {
             services
                 .AddTransient<MainView>()
-                .AddTransient<HomePageView>();
+                .AddTransient<HomePageView>()
+                .AddTransient<ButtonPageView>();
         }
 
         private static void RegisterWindow(IServiceCollection services)
